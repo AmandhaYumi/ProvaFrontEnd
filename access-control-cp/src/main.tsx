@@ -6,6 +6,7 @@ import Error from "./routes/Error";
 import Home from "./routes/Home";
 import Login from "./routes/LogUsuario";
 import Cadastro from "./routes/CadUsuario";
+import "./global.css";
 
 const router = createBrowserRouter([
   {
@@ -13,8 +14,8 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error />,
     children: [
-      { index: true, element: <Login/> },   
-      { path: "home", element: <Home/> },
+      { index: true, element: <Home /> },     
+      { path: "login", element: <Login /> },   
       { path: "cadastro", element: <Cadastro /> }
     ]
   }

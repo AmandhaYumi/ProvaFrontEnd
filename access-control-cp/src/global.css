@@ -2,7 +2,7 @@
 
 @layer {
   .container {
-    @apply flex flex-col justify-between w-[100vw] min-h-[100vh] bg-black text-slate-900 text-white;
+    @apply flex flex-col justify-between min-w-[100vw] min-h-[100vh] bg-black text-slate-900 text-white;
 
     & header {
       @apply flex justify-around items-center px-4 py-4 h-[15vh] w-[100vw] bg-blue-950 border-b border-slate-200;
@@ -37,6 +37,7 @@
 
       & img {
         @apply rounded-xl shadow-md my-4;
+        
       }
     }
 

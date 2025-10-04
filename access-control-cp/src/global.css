@@ -44,4 +44,20 @@
       @apply flex justify-center items-center px-4 py-4 h-[10vh] w-[100vw] bg-red-700 border-t border-slate-200 text-white;
     }
   }
+      .formularios {
+        @apply flex flex-col gap-6 w-full max-w-md mx-auto p-8 bg-gradient-to-br from-blue-900 via-blue-950 to-slate-900 rounded-2xl shadow-lg border border-blue-800/50 backdrop-blur-sm;
+
+    & h1 {
+        @apply text-3xl font-bold text-center mb-6 text-white tracking-wide drop-shadow-sm;
+    }
+  }
+
+      .inputlogcad {
+        @apply w-full px-4 py-3 border border-slate-500/50 rounded-xl bg-slate-800/50 text-slate-100 placeholder:text-slate-400 focus:outline-none focus:ring-4 focus:ring-blue-400/40 focus:border-blue-400 transition-all duration-300 ease-in-out;
+  }
+
+      .botaoenviar {
+        @apply w-full px-6 py-3 bg-gradient-to-r from-red-700 to-red-900 text-white font-semibold rounded-xl shadow-md hover:from-red-800 hover:to-red-950 hover:scale-[1.02] active:scale-[0.98] focus:ring-4 focus:ring-red-600/40 disabled:cursor-not-allowed transition-all duration-300 ease-in-out;
+  }
 }
+

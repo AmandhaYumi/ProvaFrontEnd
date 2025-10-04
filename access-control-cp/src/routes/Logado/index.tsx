@@ -104,6 +104,13 @@ export default function Logado() {
         It's your seventh last chance, honey
         Get your sorry ass to mine
       </p>
+      <p className="text-center text-sm mt-4">
+          Não gostou da minha cantoria?{" "}
+          <Link to="/" className="text-blue-600 hover:underline font-medium">
+            Tá bom :( Saia aqui
+          </Link>
+        </p>
+      
     </main>
   );
 }

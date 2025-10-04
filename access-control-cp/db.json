@@ -1,11 +1,3 @@
 {
-  "usuarios": [
-    {
-      "id": "6f03",
-      "nome": "juliana",
-      "nomeUsuario": "juu",
-      "email": "julianasilva.vania@gmail.com",
-      "senha": "123123"
-    }
-  ]
+  "usuarios": [ ]
 }

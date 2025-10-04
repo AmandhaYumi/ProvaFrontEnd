@@ -70,7 +70,10 @@ export default function Logado() {
         sorrir tanto quanto eu quando canto por aí!
       </p>
 
-      <h2>Sugar Talking - Sabrina Carpenter</h2>
+     <h2 className="text-center font-bold text-2xl mb-4">
+      Sugar Talking - Sabrina Carpenter
+     </h2>
+
 
       
       <p>
@@ -123,13 +126,14 @@ export default function Logado() {
         It's your seventh last chance, honey
         Get your sorry ass to mine
       </p>
-      <p className="text-center text-sm mt-4">
-          Não gostou da minha cantoria?{" "}
-          <Link to="/" className="text-blue-600 hover:underline font-medium">
-            Tá bom :( Saia aqui
-          </Link>
-        </p>
-      
+      <div className="text-center mt-4">
+      <Link
+        to="/"
+        className="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-950 transition-colors font-medium"
+      >
+        Não gostou da minha cantoria? Tá bom :( Saia aqui
+      </Link>
+      </div>
     </main>
   );
 }

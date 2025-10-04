@@ -62,6 +62,7 @@ export default function Logado() {
 
       <h2>Sugar Talking - Sabrina Carpenter</h2>
 
+      
       <p>
         Ooh-ooh, ooh-ooh-ooh
         Ooh-ooh-ooh-ooh
@@ -70,6 +71,8 @@ export default function Logado() {
         Put your loving where your mouth is
         Yeah, your paragraphs mean shit to me
         Get your sorry ass to mine
+      </p>
+      <p>  
         Ooh-ooh, ooh-ooh-ooh
         Ooh-ooh-ooh-ooh
         Saying that you miss me
@@ -79,11 +82,15 @@ export default function Logado() {
         And aren't you tired of saying a whole lot of nothing?
         You tell me that you want me (want me)
         But, baby, if you need me (need me) (yeah)
+      </p>
+      <p>  
         Put your loving where your mouth is
         Your sugar talking isn't working tonight, oh
         Say you're a big changed man, I doubt it
         Yeah, your paragraphs mean shit to me
         Get your sorry ass to mine
+      </p>
+      <p>  
         Ooh-ooh, ooh-ooh-ooh
         Ooh-ooh-ooh-ooh
         You filled my whole apartment
@@ -93,6 +100,8 @@ export default function Logado() {
         Save your money and stop makin' me cry
         You tell me that you want me (want me) (oh-oh)
         But, baby, if you need me (need me) (yeah)
+      </p>
+      <p>  
         Oh-oh-oh
         Ooh-ooh, ooh-ooh-ooh
         Ooh-ooh-ooh-ooh

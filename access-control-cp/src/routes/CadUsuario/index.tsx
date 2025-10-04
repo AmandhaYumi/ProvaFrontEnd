@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import type { TipoUsuario } from "../../types/tipoUsuario";
 import { useForm } from "react-hook-form";
+import FundoImg from "../../assets/fundo1.jpg";
 
 const URL_API = import.meta.env.VITE_URL_API_USUARIOS;
 
@@ -52,7 +53,15 @@ export default function CadUsuario() {
   };
 
   return (
-    <main className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-black">
+    <main 
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${FundoImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+       >
       <img
         src={SugartImg}
         alt="SugarT canto"

@@ -2,8 +2,9 @@ import { useEffect } from "react";
 import type { tipoLogin } from "../../types/tipoLogin";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import SugartImg from "../../assets/sugart.jpg"
-import Integrantes from "../../assets/integrantes.png"
+import SugartImg from "../../assets/sugart.jpg";
+import Integrantes from "../../assets/integrantes.png";
+import FundoImg from "../../assets/fundo1.jpg";
 
 const URL_API = import.meta.env.VITE_URL_API_USUARIOS;
 
@@ -47,7 +48,16 @@ export default function Home() {
   };
 
   return (
-    <main className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-black">
+
+      <main 
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${FundoImg})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+      >
       <img
         src={SugartImg}
         alt="SugarT canto"

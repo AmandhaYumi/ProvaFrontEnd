@@ -1,6 +1,8 @@
 import { useState } from "react";
 import SugartImg from "../../assets/sugart.jpg";
 import { Link } from "react-router-dom";
+import SugartImg2 from "../../assets/sugart2.png"
+import Clica from "../../assets/clica.png"
 
 export default function Logado() {
   document.title = "Logado";
@@ -24,22 +26,30 @@ export default function Logado() {
     <main>
       <h1>Falando com o SugarT :)</h1>
 
-      <img
+      {!mostrarEasterEgg && (
+        <img
         src={SugartImg}
         alt="SugarT cupcake cantor"
         onClick={handleClick}
         className="w-[300px] mx-auto my-5 rounded-2xl animate-bounce cursor-pointer active:scale-95 transition-transform"
         style={{ width: "300px", margin: "20px 0" }}
       />
+)}
+      <img src={Clica} alt="Poster de clique em mim" className="w-[300px] mx-auto my-5 rounded-2xl active:scale-95 transition-transform absolute top-[25%] left-[20%]" style={{ width: "300px", margin: "20px 0" }} />
 
       {mostrarEasterEgg && (
-        <div className="bg-white-200 p-5 rounded-2xl shadow-lg max-w-md mx-auto animate-pulse mb-4">
-          <p>
-            Surpresa! Você descobriu o meu segredo!
-            Estou te mandando um doce abraço açucarado!
-          </p>
-        </div>
-      )}
+      <div className="p-5 rounded-2xl shadow-lg max-w-md mx-auto animate-pulse mb-4 text-center">
+      <img
+      src={SugartImg2}
+      alt="Easter Egg"
+      className="w-[300px] mx-auto my-5 rounded-2xl animate-bounce"
+      />
+      <p>
+      Surpresa! Você descobriu o meu segredo!
+      Estou te mandando um doce abraço açucarado!
+      </p>
+      </div>
+)}
 
       <p>
         Olá! Eu sou o SugarT! Sou um cantor e tenho esse nome porque vim do

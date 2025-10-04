@@ -5,4 +5,4 @@ export default function Error(){
             <h1>Error 404 Not Found - Página não encontrada</h1>
         </main>
     );
-}
+} 

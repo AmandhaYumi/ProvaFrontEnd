@@ -3,6 +3,7 @@ import SugartImg from "../../assets/sugart.jpg";
 import { Link } from "react-router-dom";
 import SugartImg2 from "../../assets/sugart2.png"
 import Clica from "../../assets/clica.png"
+import DezVezes from "../../assets/dezvezes.png"
 
 export default function Logado() {
   document.title = "Logado";
@@ -36,6 +37,8 @@ export default function Logado() {
       />
 )}
       <img src={Clica} alt="Poster de clique em mim" className="w-[300px] mx-auto my-5 rounded-2xl active:scale-95 transition-transform absolute top-[25%] left-[20%]" style={{ width: "300px", margin: "20px 0" }} />
+
+      <img src={DezVezes} alt="Poster avisando para clicar dez vezes com a bandeira britânica" className="w-[300px] mx-auto my-5 rounded-2xl active:scale-95 transition-transform absolute top-[25%] right-[20%]" style={{ width: "300px", margin: "20px 0" }} />
 
       {mostrarEasterEgg && (
       <div className="p-5 rounded-2xl shadow-lg max-w-md mx-auto animate-pulse mb-4 text-center">
@@ -129,7 +132,7 @@ export default function Logado() {
       <div className="text-center mt-4">
       <Link
         to="/"
-        className="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-950 transition-colors font-medium"
+        className="bg-blue-950 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors font-medium"
       >
         Não gostou da minha cantoria? Tá bom :( Saia aqui
       </Link>

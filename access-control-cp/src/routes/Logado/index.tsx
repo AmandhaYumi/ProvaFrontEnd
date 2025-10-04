@@ -15,7 +15,7 @@ export default function Logado() {
         <p> Continuo espalhando minha doçura por aí, tem uma música que combina demais comigo: “Sugar Talking” da Sabrina Carpenter!  
         Sempre que escuto, sinto minhas notas dançarem e até meus doces preferidos começam a cantar junto! HAHAHA  
         Espero que essa música adoçe também o seu dia e faça você sorrir tanto quanto eu quando canto por aí!</p>
-        <h2>Sugar Talking- Sabrina Carpinter</h2> 
+        <h2>Sugar Talking- Sabrina Carpenter</h2> 
         <p>Ooh-ooh, ooh-ooh-ooh
           Ooh-ooh-ooh-ooh
 

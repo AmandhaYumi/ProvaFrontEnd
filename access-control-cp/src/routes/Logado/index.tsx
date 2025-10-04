@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import SugartImg from "../../assets/sugart.jpg";
 import { Link } from "react-router-dom";
 import SugartImg2 from "../../assets/sugart2.png"
-import Clica from "../../assets/clica.png"
+import Clica from "../../assets/clique.png"
 import DezVezes from "../../assets/dezvezes.png"
 
 export default function Logado() {

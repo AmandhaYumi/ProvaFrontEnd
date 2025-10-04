@@ -34,7 +34,7 @@ export default function Home() {
         }));
 
         alert(`Bem-vindo(a), ${usuario.nome}!`);
-        navigate("/home"); 
+        navigate("/Logado"); 
       } else {
         alert("Usuário ou email incorretos!");
       }

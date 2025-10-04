@@ -1,3 +1,10 @@
 {
-  "usuarios": [ ]
+  "usuarios": [
+    {
+      "id": "2f9a",
+      "nome": "Amandha",
+      "nomeUsuario": "Yumizxs",
+      "email": "mandhayumi@gmail.com"
+    }
+  ]
 }

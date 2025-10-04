@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Error from "./routes/Error";
 import Login from "./routes/Home";      
 import Cadastro from "./routes/CadUsuario"; 
-import Logado from "./routes/Home";       
+import Logado from "./routes/Logado";    
 import "./global.css";
 
 const router = createBrowserRouter([
@@ -14,10 +14,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error />,
     children: [
-      { index: true, element: <Login /> },    
-      { path: "logado", element: <Logado /> }, 
-      { path: "login", element: <Login /> },   
-      { path: "cadastro", element: <Cadastro /> }
+      { index: true, element: <Login /> },      
+      { path: "login", element: <Login /> },    
+      { path: "cadastro", element: <Cadastro /> },
+      { path: "logado", element: <Logado /> }   
     ]
   }
 ]);

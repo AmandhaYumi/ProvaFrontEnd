@@ -84,19 +84,6 @@ export default function CadUsuario() {
           />
           {errors.email && <p className="text-red-500 text-sm">{errors.email.message}</p>}
         </div>
-
-        <div className="space-y-1">
-          <label htmlFor="senha" className="block text-sm font-medium">Senha:</label>
-          <input
-            type="password"
-            id="senha"
-            {...register("senha", { required: "Informe a senha", minLength: { value: 6, message: "Mínimo 6 caracteres" } })}
-            className="inputlogcad"
-            placeholder="Digite sua senha..."
-          />
-          {errors.senha && <p className="text-red-500 text-sm">{errors.senha.message}</p>}
-        </div>
-
         <button type="submit" disabled={isSubmitting || !isValid} className="botaoenviar">
           {isSubmitting ? "Cadastrando..." : "Cadastrar"}
         </button>

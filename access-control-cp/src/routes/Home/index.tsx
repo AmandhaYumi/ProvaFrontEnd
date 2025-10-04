@@ -1,7 +1,8 @@
 import { useEffect } from "react";
-import { useForm } from "react-hook-form";
-import { useNavigate, Link } from "react-router-dom";
 import type { tipoLogin } from "../../types/tipoLogin";
+import { Link, useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import SugartImg from "../../assets/sugart.jpg"
 
 const URL_API = import.meta.env.VITE_URL_API_USUARIOS;
 
@@ -25,16 +26,16 @@ export default function Home() {
 
       if (usuarios.length > 0) {
         const usuario = usuarios[0];
-        
+
         localStorage.setItem("usuarioLogado", JSON.stringify({
           id: usuario.id,
           nome: usuario.nome,
           nomeUsuario: usuario.nomeUsuario,
-          email: usuario.email
+          email: usuario.email,
         }));
 
         alert(`Bem-vindo(a), ${usuario.nome}!`);
-        navigate("/Logado"); 
+        navigate("/Logado");
       } else {
         alert("Usuário ou email incorretos!");
       }
@@ -45,9 +46,44 @@ export default function Home() {
   };
 
   return (
-    <main>
-      <form onSubmit={handleSubmit(onSubmit)} className="formularios">
-        <h1>Acesse sua conta sugartalking!</h1>
+    <main className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-black">
+      <img
+        src={SugartImg}
+        alt="SugarT canto"
+        className="absolute top-[5%] left-[10%] w-20 animate-pulse pointer-events-none"
+      />
+      <img
+        src={SugartImg}
+        alt="SugarT canto"
+        className="absolute top-[5%] right-[10%] w-20 animate-pulse pointer-events-none"
+      />
+      <img
+        src={SugartImg}
+        alt="SugarT canto"
+        className="absolute bottom-[5%] left-[10%] w-20 animate-pulse pointer-events-none"
+      />
+      <img
+        src={SugartImg}
+        alt="SugarT canto"
+        className="absolute bottom-[5%] right-[10%] w-20 animate-pulse pointer-events-none"
+      />
+      <img
+        src={SugartImg}
+        alt="SugarT canto"
+        className="absolute top-[45%] left-[20%] w-20 animate-pulse pointer-events-none"
+      />
+      <img
+        src={SugartImg}
+        alt="SugarT canto"
+        className="absolute top-[45%] right-[20%] w-20 animate-pulse pointer-events-none"
+      />
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="formularios z-10 bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-xl max-w-md w-full"
+      >
+        <h1 className="text-center text-2xl font-bold mb-6">
+          🎵 Acesse sua conta Sugartalking! 🎸
+        </h1>
 
         <div className="space-y-1">
           <label htmlFor="nomeUsuario" className="block text-sm font-medium">
@@ -100,7 +136,10 @@ export default function Home() {
 
         <p className="text-center text-sm mt-4">
           Ainda não tem uma conta?{" "}
-          <Link to="/cadastro" className="text-blue-600 hover:underline font-medium">
+          <Link
+            to="/cadastro"
+            className="text-blue-600 hover:underline font-medium"
+          >
             Cadastre-se aqui
           </Link>
         </p>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SugartImg from "../../assets/sugart.jpg";
 import { Link } from "react-router-dom";
 import SugartImg2 from "../../assets/sugart2.png"
@@ -10,6 +10,8 @@ export default function Logado() {
 
   const [clickCount, setClickCount] = useState(0);
   const [mostrarEasterEgg, setMostrarEasterEgg] = useState(false);
+  const [usuarioNome, setUsuarioNome] = useState("");
+  const [email, setEmail] = useState("");
 
   const handleClick = () => {
     const contador = clickCount + 1;
@@ -23,9 +25,17 @@ export default function Logado() {
     }
   };
 
+   useEffect(() => {
+  const nome = localStorage.getItem("usuarioNome") || "usuário";
+  const email = localStorage.getItem("usuarioEmail") || "seu email";
+  setUsuarioNome(nome);
+  setEmail(email);
+}, []);
+
   return (
     <main>
-      <h1>Falando com o SugarT :)</h1>
+      <h1 className="text-center text-2xl font-bold mb-4">
+        Olá, {usuarioNome}, eu sou o SugarT!</h1>
 
       {!mostrarEasterEgg && (
         <img
@@ -134,9 +144,10 @@ export default function Logado() {
         to="/"
         className="bg-blue-950 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors font-medium"
       >
-        Não gostou da minha cantoria? Tá bom :( Saia aqui
+        Não gostou da minha cantoria, {email}? Tá bom :( Saia aqui
       </Link>
       </div>
     </main>
   );
 }
+

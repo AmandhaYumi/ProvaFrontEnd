@@ -15,7 +15,57 @@ export default function Logado() {
         <p> Continuo espalhando minha doçura por aí, tem uma música que combina demais comigo: “Sugar Talking” da Sabrina Carpenter!  
         Sempre que escuto, sinto minhas notas dançarem e até meus doces preferidos começam a cantar junto! HAHAHA  
         Espero que essa música adoçe também o seu dia e faça você sorrir tanto quanto eu quando canto por aí!</p>
+        <h2>Sugar Talking- Sabrina Carpinter</h2> 
+        <p>Ooh-ooh, ooh-ooh-ooh
+          Ooh-ooh-ooh-ooh
 
-    </main>
+          Put your loving where your mouth is
+          Your sugar talking isn't working tonight, oh
+          Put your loving where your mouth is
+          Yeah, your paragraphs mean shit to me
+          Get your sorry ass to mine
+
+          Ooh-ooh, ooh-ooh-ooh
+          Ooh-ooh-ooh-ooh
+
+          Saying that you miss me
+          Boy, do you win a prize?
+          You're havin' these epiphanies
+          Big word for a real small mind
+          And aren't you tired of saying a whole lot of nothing?
+
+          You tell me that you want me (want me)
+          But, baby, if you need me (need me) (yeah)
+
+          Put your loving where your mouth is
+          Your sugar talking isn't working tonight, oh
+          Say you're a big changed man, I doubt it
+          Yeah, your paragraphs mean shit to me
+          Get your sorry ass to mine
+
+          Ooh-ooh, ooh-ooh-ooh
+          Ooh-ooh-ooh-ooh
+
+          You filled my whole apartment
+          With flowers that died
+          The first to open up your wallet
+          But the last one to flag, a heart only breaks so many times
+          Save your money and stop makin' me cry
+
+          You tell me that you want me (want me) (oh-oh)
+          But, baby, if you need me (need me) (yeah)
+          Oh-oh-oh
+
+          Ooh-ooh, ooh-ooh-ooh
+          Ooh-ooh-ooh-ooh
+
+          Put your loving where your mouth is
+          Your sugar talking isn't working tonight, oh
+          Put your loving where your mouth is
+          Yeah, your paragraphs mean shit to me
+          It's verbatim what you said last week
+          It's your seventh last chance, honey
+          Get your sorry ass to mine</p>
+    </main> 
   );
 }

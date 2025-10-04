@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@layer {
+  .container {
+    @apply flex flex-col justify-between w-[100vw] min-h-[100vh] bg-black text-slate-900 text-white;
+  }
+}

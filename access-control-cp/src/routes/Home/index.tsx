@@ -51,37 +51,37 @@ export default function Home() {
       <img
         src={SugartImg}
         alt="SugarT canto"
-        className="absolute top-[5%] left-[10%] w-20 animate-pulse pointer-events-none"
+        className="absolute top-[5%] left-[10%] w-30 animate-pulse pointer-events-none"
       />
       <img
         src={SugartImg}
         alt="SugarT canto"
-        className="absolute top-[5%] right-[10%] w-20 animate-pulse pointer-events-none"
+        className="absolute top-[5%] right-[10%] w-30 animate-pulse pointer-events-none"
       />
       <img
         src={SugartImg}
         alt="SugarT canto"
-        className="absolute bottom-[5%] left-[10%] w-20 animate-pulse pointer-events-none"
+        className="absolute bottom-[5%] left-[10%] w-30 animate-pulse pointer-events-none"
       />
       <img
         src={SugartImg}
         alt="SugarT canto"
-        className="absolute bottom-[5%] right-[10%] w-20 animate-pulse pointer-events-none"
+        className="absolute bottom-[5%] right-[10%] w-30 animate-pulse pointer-events-none"
       />
       <img
         src={SugartImg}
         alt="SugarT canto"
-        className="absolute top-[45%] left-[20%] w-20 animate-pulse pointer-events-none"
+        className="absolute top-[45%] left-[20%] w-30 animate-pulse pointer-events-none"
       />
       <img
         src={SugartImg}
         alt="SugarT canto"
-        className="absolute top-[45%] right-[20%] w-20 animate-pulse pointer-events-none"
+        className="absolute top-[45%] right-[20%] w-30 animate-pulse pointer-events-none"
       />
       <img
         src={Integrantes}
         alt="SugarT canto"
-        className="absolute top-[3%] right-[41%] w-75 pointer-events-none"
+        className="absolute top-[0%] right-[40%] w-90 pointer-events-none"
       />
       <form
         onSubmit={handleSubmit(onSubmit)}

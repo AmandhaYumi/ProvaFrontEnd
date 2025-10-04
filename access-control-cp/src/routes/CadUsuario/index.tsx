@@ -86,7 +86,7 @@ export default function CadUsuario() {
       <img
         src={Integrantes}
         alt="SugarT canto"
-        className="absolute top-[1%] right-[40%] w-90 pointer-events-none"
+        className="absolute top-[5%] right-[41,5%] w-90 pointer-events-none"
       />
 
       <form 
@@ -94,7 +94,9 @@ export default function CadUsuario() {
       className="formularios z-10 bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-xl max-w-md w-full mt-32"
       >
 
-        <h1 className="text-2xl font-bold text-center mb-6">Crie sua conta sugartalking!</h1>
+          <h1 className="text-center text-2xl font-bold mb-6">
+          🎵 Cadastre-se no SugarTalking! 🎸
+        </h1>
 
         <div className="space-y-1 mb-4">
           <label htmlFor="nome" className="block text-sm font-medium">Nome:</label>

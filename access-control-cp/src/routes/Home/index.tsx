@@ -81,7 +81,7 @@ export default function Home() {
       <img
         src={Integrantes}
         alt="SugarT canto"
-        className="absolute top-[0%] right-[40%] w-90 pointer-events-none"
+        className="absolute top-[3%] right-[41,5%] w-90 pointer-events-none"
       />
       <form
         onSubmit={handleSubmit(onSubmit)}

@@ -3,6 +3,7 @@ import type { tipoLogin } from "../../types/tipoLogin";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import SugartImg from "../../assets/sugart.jpg"
+import Integrantes from "../../assets/integrantes.png"
 
 const URL_API = import.meta.env.VITE_URL_API_USUARIOS;
 
@@ -76,6 +77,11 @@ export default function Home() {
         src={SugartImg}
         alt="SugarT canto"
         className="absolute top-[45%] right-[20%] w-20 animate-pulse pointer-events-none"
+      />
+      <img
+        src={Integrantes}
+        alt="SugarT canto"
+        className="absolute top-[3%] right-[41%] w-75 pointer-events-none"
       />
       <form
         onSubmit={handleSubmit(onSubmit)}

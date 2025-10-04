@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import type { TipoUsuario } from "../../types/tipoUsuario";
+import SugartImg from "../../assets/sugart.jpg"
+import Integrantes from "../../assets/integrantes.png"
 
 const URL_API = import.meta.env.VITE_URL_API_USUARIOS;
 
@@ -48,8 +50,43 @@ export default function CadUsuario() {
     }
   };
   return (
-    <main>
-      <form onSubmit={handleSubmit(onSubmit)} className="formularios">
+    <main className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-black">
+      <img
+        src={SugartImg}
+        alt="SugarT canto"
+        className="absolute top-[5%] left-[10%] w-20 animate-pulse pointer-events-none"
+      />
+      <img
+        src={SugartImg}
+        alt="SugarT canto"
+        className="absolute top-[5%] right-[10%] w-20 animate-pulse pointer-events-none"
+      />
+      <img
+        src={SugartImg}
+        alt="SugarT canto"
+        className="absolute bottom-[5%] left-[10%] w-20 animate-pulse pointer-events-none"
+      />
+      <img
+        src={SugartImg}
+        alt="SugarT canto"
+        className="absolute bottom-[5%] right-[10%] w-20 animate-pulse pointer-events-none"
+      />
+      <img
+        src={SugartImg}
+        alt="SugarT canto"
+        className="absolute top-[45%] left-[20%] w-20 animate-pulse pointer-events-none"
+      />
+      <img
+        src={SugartImg}
+        alt="SugarT canto"
+        className="absolute top-[45%] right-[20%] w-20 animate-pulse pointer-events-none"
+      />
+      <img
+        src={Integrantes}
+        alt="SugarT canto"
+        className="absolute top-[1%] right-[41%] w-75 pointer-events-none"
+      />
+      <form onSubmit={handleSubmit(onSubmit)} className="formularios  z-10 bg-white/80 backdrop-blur-md p-8 rounded-2xl shadow-xl max-w-md w-full">
         <h1>Crie sua conta sugartalking!</h1>
         <div className="space-y-1">
           <label htmlFor="nome" className="block text-sm font-medium">Nome:</label>

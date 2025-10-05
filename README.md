@@ -3,7 +3,17 @@
 --
 
 📌 Sobre o Projeto
-Nosso projeto se trata sobre um sistema de login e cadastro, que ao entrar é apresentado o nosso personagem SugarT, um cupcake cantor
+Nosso projeto se trata sobre um sistema de login e cadastro, que ao entrar é apresentado o nosso personagem SugarT, um cupcake cantor.
+
+--
+
+💻 Como Rodar o SugarTalking
+1. No terminal cmd coloque: "npm i"
+2. Depois execute no terminal:
+"npm run server"
+3. Após isso, no terminal colocar:
+"npm run dev:
+4. Para acessar no mesmo terminal digite "o"
 
 --
 
